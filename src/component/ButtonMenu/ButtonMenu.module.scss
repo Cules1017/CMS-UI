@@ -1,0 +1,24 @@
+.wapper {
+    padding: auto;
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 32px;
+    font-size: 1.4rem;
+    width: fit-content;
+    height: 32px;
+    border-right: dotted 1px rgb(170, 168, 168);
+    background: rgb(6, 6, 251);
+    background: white; //linear-gradient(180deg, rgb(196, 196, 215) 36%, rgba(0, 212, 255, 1) 100%);
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        background: rgb(6, 6, 251);
+        background: linear-gradient(180deg, #1890ff 36%, rgba(0, 212, 255, 1) 100%);
+    }
+}
+
+.active {
+    background: rgb(6, 6, 251);
+    background: linear-gradient(180deg, #1890ff 36%, rgba(0, 212, 255, 1) 100%);
+}
