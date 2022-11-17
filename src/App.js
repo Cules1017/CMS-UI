@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { publicRoutes } from '~/routes';
-import './App.css';
 import Header from './component/Layout/Header/Header';
+import Sidenav from './component/Layout/Sidenav/Sidenav';
 
 function App() {
     return (
@@ -17,6 +17,7 @@ function App() {
                                 element={
                                     <div>
                                         <Header />
+                                        <Sidenav/>
                                         <Page />
                                     </div>
                                 }
