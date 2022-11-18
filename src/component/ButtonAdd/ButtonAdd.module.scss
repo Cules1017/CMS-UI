@@ -1,0 +1,19 @@
+.wapper {
+    cursor: pointer;
+    width: 80px;
+    margin-left: 8px;
+    font-weight: bold;
+    background-color: #1890ff;
+    padding: 4px 24px;
+    color: white;
+    &:hover {
+        background-color: #0a4174;
+        color: #1890ff;
+    }
+    .success {
+        background-color: #15bb2b;
+        &:hover {
+            background-color: #0f6a1b;
+        }
+    }
+}
