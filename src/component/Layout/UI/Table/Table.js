@@ -1,3 +1,4 @@
+import { userInFo } from '~/routes';
 import classNames from 'classnames/bind';
 import styles from './Table.module.scss';
 const cx = classNames.bind(styles);
@@ -15,21 +16,25 @@ const Table = () => {
                     <th>Status</th>
                     <th>Operation</th>
                 </tr>
-                <tr>
-                    <td className={cx('a-center')}>1</td>
-                    <td>Nguyen Van A</td>
-                    <td>NVA</td>
-                    <td>Admin</td>
-                    <td className={cx('a-center')}>18/10/2022</td>
-                    <td className={cx('a-center')}>Hoạt động</td>
-                    <td className={cx('a-center')}>
-                        <select>
-                            <option>--Select--</option>
-                            <option>Edit</option>
-                            <option>Delete</option>
-                        </select>
-                    </td>
-                </tr>
+                {userInFo.map(({ id, fullname, name, group, createDate, status }, index) => {
+                    return (
+                        <tr key={index}>
+                            <td className={cx('a-center')}>{id}</td>
+                            <td>{fullname}</td>
+                            <td>{name}</td>
+                            <td>{group}</td>
+                            <td className={cx('a-center')}>{createDate}</td>
+                            <td className={cx('a-center')}>{status}</td>
+                            <td className={cx('a-center')}>
+                                <select>
+                                    <option>--Select--</option>
+                                    <option>Edit</option>
+                                    <option>Delete</option>
+                                </select>
+                            </td>
+                        </tr>
+                    );
+                })}
             </table>
         </div>
     );

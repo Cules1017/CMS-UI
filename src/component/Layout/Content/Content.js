@@ -1,18 +1,21 @@
 import Table from '../UI/Table/Table';
-import classNames from 'classnames/bind';
-import styles from './Content.module.scss';
 import Add from '../UI/Add/Add';
 import HeaderContent from '~/component/HeaderContent/HeaderContent';
 import ButtonAdd from '~/component/ButtonAdd/ButtonAdd';
+
+import classNames from 'classnames/bind';
+import styles from './Content.module.scss';
 const cx = classNames.bind(styles);
 
-const Content = () => {
+const Content = ({ children }) => {
     return (
         <div className={cx('wapper')}>
-            <HeaderContent title="Add Infomation">
-                <ButtonAdd>1111</ButtonAdd>
+            <HeaderContent title="User">
+                <ButtonAdd>Add</ButtonAdd>
             </HeaderContent>
-            <Add></Add>
+            {/* <Add></Add> */}
+            {/* <Table /> */}
+            {children}
         </div>
     );
 };

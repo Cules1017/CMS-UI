@@ -1,28 +1,28 @@
 import Sidenav from '~/component/Layout/Sidenav/Sidenav';
 import classNames from 'classnames/bind';
-import styles from './home.module.scss';
+import styles from './ServerManagement.module.scss';
 import Content from '~/component/Layout/Content/Content';
 import Add from '~/component/Layout/UI/Add/Add';
 const cx = classNames.bind(styles);
 
-function Home() {
-    const dataUser = [
+function ServerManagement() {
+    const dataServer = [
         {
-            name: 'User',
-            path: '/',
+            name: 'Region Server',
+            path: '/servermanagement/regionserver',
         },
         {
-            name: 'Nhóm quyền',
-            path: '/usermanagement/group',
+            name: 'EPG Server',
+            path: '/servermanagement/epgserver',
         },
         {
-            name: 'Quản lý menu',
-            path: '/usermanagement/menu',
+            name: 'Core Server',
+            path: '/servermanagement/coreserver',
         },
     ];
     return (
         <div className={cx('menu-body')}>
-            <Sidenav data={dataUser} />
+            <Sidenav data={dataServer} />
             <Content>
                 <Add />
             </Content>
@@ -30,4 +30,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default ServerManagement;

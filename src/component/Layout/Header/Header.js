@@ -14,7 +14,7 @@ function Header() {
     //     setactive(num);
     // };
     var listbtn = [
-        { content: 'Quản Lý User', path: '/' },
+        { content: 'Quản Lý User', path: '/usermanagement' },
         { content: 'Quản Lý Server', path: '/servermanagement' },
         { content: 'Quản Lý User VNP', path: '/vnpusermanagement' },
         { content: 'Quản Lý Source Code', path: '/sourcecodemanagement' },
