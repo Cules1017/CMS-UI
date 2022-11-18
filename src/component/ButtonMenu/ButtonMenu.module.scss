@@ -13,12 +13,12 @@
     &:hover,
     &:focus {
         cursor: pointer;
-        background: rgb(6, 6, 251);
-        background: linear-gradient(180deg, #1890ff 36%, rgba(0, 212, 255, 1) 100%);
+        background: #1890ff;
+        color: #fff;
     }
 }
 
 .active {
-    background: rgb(6, 6, 251);
-    background: linear-gradient(180deg, #1890ff 36%, rgba(0, 212, 255, 1) 100%);
+    background: #1890ff;
+    color: #fff;
 }

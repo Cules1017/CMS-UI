@@ -8,19 +8,19 @@ import ButtonMenu from '~/component/ButtonMenu/ButtonMenu';
 
 const cx = classNames.bind(styles);
 function Header() {
-    const [act, setactive] = useState(0);
+    // const [act, setactive] = useState(0);
     const location = useLocation();
-    const handleOnclick = (num) => {
-        setactive(num);
-    };
+    // const handleOnclick = (num) => {
+    //     setactive(num);
+    // };
     var listbtn = [
-        { content: 'Quản Lý User', path: '/usermanagement' },
+        { content: 'Quản Lý User', path: '/' },
         { content: 'Quản Lý Server', path: '/servermanagement' },
         { content: 'Quản Lý User VNP', path: '/vnpusermanagement' },
         { content: 'Quản Lý Source Code', path: '/sourcecodemanagement' },
     ];
     const Comp = listbtn.map((x, index) => {
-        console.log(location.pathname);
+        // console.log(location.pathname);
         if (location.pathname === x.path)
             return (
                 <ButtonMenu to={x.path} key={index} active>

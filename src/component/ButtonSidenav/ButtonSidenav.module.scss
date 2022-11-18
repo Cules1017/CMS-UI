@@ -1,0 +1,42 @@
+.wrapper {
+    min-height: 52px;
+    width: 194px;
+    padding: 16px;
+
+    display: flex;
+    align-items: center;
+
+    color: #000;
+
+    font-weight: 600;
+    font-size: 14px;
+
+    &:hover,
+    &:focus {
+        border-radius: 8px;
+        border: none;
+        background-color: #1890ff;
+        box-shadow: 0 20px 27px rgb(0 0 0 / 5%);
+        color: #ffffff;
+    }
+}
+
+.wrapper span {
+    width: 24px;
+    height: 24px;
+    line-height: 28px;
+    text-align: center;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 4px;
+    margin-right: 8px;
+    box-shadow: 0 20px 27px rgb(0 0 0 / 10%);
+}
+
+.active {
+    border-radius: 8px;
+    border: none;
+    background-color: #1890ff;
+    box-shadow: 0 20px 27px rgb(0 0 0 / 5%);
+    color: #ffffff;
+}

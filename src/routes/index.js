@@ -8,6 +8,7 @@ const publicRoutes = [
     { path: '/sourcecodemanagement', component: Home },
 ];
 
-const privateRoutes = [];
+// const privateRoutes = [];
 
-export { publicRoutes, privateRoutes };
+// export { publicRoutes, privateRoutes };
+export { publicRoutes };

@@ -58,3 +58,31 @@ a {
     color: var(--text-color);
     text-decoration: none;
 }
+
+.menu-body {
+    display: flex;
+}
+
+.a-center {
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+th {
+    background-color: #1890ff;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+th,
+td {
+    padding: 3px;
+}
