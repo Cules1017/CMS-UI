@@ -1,14 +1,108 @@
-import GroupRule from '~/pages/GroupRule/GroupRule';
 import Home from '~/pages/Home/Home';
+import GroupRule from '~/pages/GroupRule/GroupRule';
 import ServerManagement from '~/pages/ServerManagement/ServerManagement';
+import SourceCodeManagement from '~/pages/SourceCodeManagement/SourceCodeManagement';
+import UserVNPManagement from '~/pages/UserVNPManagement/UserVNPManagement';
+import MenuManagement from '~/pages/MenuManagement/MenuManagement';
 
 const publicRoutes = [
-    { path: '/', component: Home },
-    // { path: '/usermanagement', component: ServerManagement },
-    { path: '/usermanagement', component: Home },
-    { path: '/servermanagement', component: ServerManagement },
-    { path: '/vnpusermanagement', component: Home },
-    { path: '/sourcecodemanagement', component: Home },
+    { path: '/usermanagement/user', component: Home },
+    { path: '/usermanagement/group', component: GroupRule },
+    { path: '/usermanagement/menu', component: MenuManagement },
+
+    { path: '/servermanagement/regionserver', component: ServerManagement },
+
+    { path: '/uservnpmanagement/user', component: UserVNPManagement },
+
+    { path: '/sourcecodemanagement/module', component: SourceCodeManagement },
+];
+
+export const moduleUser = [
+    {
+        name: 'User',
+        path: '/usermanagement/user',
+    },
+    {
+        name: 'Nhóm quyền',
+        path: '/usermanagement/group',
+    },
+    {
+        name: 'Quản lý menu',
+        path: '/usermanagement/menu',
+    },
+];
+
+export const moduleServer = [
+    {
+        name: 'Region Server',
+        path: '/servermanagement/regionserver',
+    },
+    {
+        name: 'EPG Server',
+        path: '/servermanagement/epgserver',
+    },
+    {
+        name: 'Core Server',
+        path: '/servermanagement/coreserver',
+    },
+    {
+        name: 'Cấu hình Auhen URL',
+        path: '/servermanagement/authenurl',
+    },
+    {
+        name: 'Redis Server',
+        path: '/servermanagement/redisserver',
+    },
+    {
+        name: 'Quản lý Server group',
+        path: '/servermanagement/servergroup',
+    },
+    {
+        name: 'Plugin server type',
+        path: '/servermanagement/pluginservertype',
+    },
+    {
+        name: 'Plugin server',
+        path: '/servermanagement/pluginserver',
+    },
+    {
+        name: 'Device by pass',
+        path: '/servermanagement/devicebypass',
+    },
+    {
+        name: 'Quản lý Services',
+        path: '/servermanagement/servicesmanagement',
+    },
+];
+
+export const moduleSourceCode = [
+    {
+        name: 'Module',
+        path: 'sourcecodemanagement/module',
+    },
+    {
+        name: 'File',
+        path: '/sourcecodemanagement/file',
+    },
+    {
+        name: 'Controller',
+        path: '/sourcecodemanagement/controller',
+    },
+];
+
+export const moduleUserVNP = [
+    {
+        name: 'User',
+        path: 'uservnpmanagement/user',
+    },
+    {
+        name: 'Nhóm quyền',
+        path: '/uservnpmanagement/group',
+    },
+    {
+        name: 'Quản lý menu',
+        path: '/uservnpmanagement/menu',
+    },
 ];
 
 export const userInFo = [
@@ -54,7 +148,4 @@ export const userInFo = [
     },
 ];
 
-// const privateRoutes = [];
-
-// export { publicRoutes, privateRoutes };
 export { publicRoutes };

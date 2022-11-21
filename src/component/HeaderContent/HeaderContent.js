@@ -3,12 +3,11 @@ import styles from './HeaderContent.module.scss';
 const cx = classNames.bind(styles);
 function HeaderContent({ title = '', children }) {
     return (
-        <div className={cx('wapper')}>
-            <h3>
+        <div className={cx('wrapper')}>
+            <h2>
                 {title}
-
                 <span className={cx('a-right')}>{children}</span>
-            </h3>
+            </h2>
         </div>
     );
 }

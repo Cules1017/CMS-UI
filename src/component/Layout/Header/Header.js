@@ -14,10 +14,10 @@ function Header() {
     //     setactive(num);
     // };
     var listbtn = [
-        { content: 'Quản Lý User', path: '/usermanagement' },
-        { content: 'Quản Lý Server', path: '/servermanagement' },
-        { content: 'Quản Lý User VNP', path: '/vnpusermanagement' },
-        { content: 'Quản Lý Source Code', path: '/sourcecodemanagement' },
+        { content: 'Quản Lý User', path: '/usermanagement/user' },
+        { content: 'Quản Lý Server', path: '/servermanagement/regionserver' },
+        { content: 'Quản Lý User VNP', path: '/uservnpmanagement/user' },
+        { content: 'Quản Lý Source Code', path: '/sourcecodemanagement/module' },
     ];
     const Comp = listbtn.map((x, index) => {
         // console.log(location.pathname);
@@ -39,7 +39,6 @@ function Header() {
                 <img className={cx('logo_top')} src={require('~/images/logo_56.png')} />
                 <div className={cx('searchbar')}>
                     <input placeholder="Vui lòng nhập tên menu" className={cx('searchbar__input')} type="text" />
-                    {/* <span className={cx('searchbar__boderfake')}>|</span> */}
                     <button className={cx('searchbar__searchbtn')}>
                         <FontAwesomeIcon icon={faMagnifyingGlass}></FontAwesomeIcon>
                     </button>

@@ -1,29 +1,22 @@
 import Sidenav from '~/component/Layout/Sidenav/Sidenav';
 import Content from '~/component/Layout/Content/Content';
-import HeaderContent from '~/component/HeaderContent/HeaderContent';
-import Button from '~/component/Button/Button';
 import Table from '~/component/Layout/UI/Table/Table';
-import PaginationBot from '~/component/Pagination/PaginationBot';
 
 import { moduleUser } from '~/routes';
 
 import classNames from 'classnames/bind';
-import styles from './GroupRule.module.scss';
+import styles from './MenuManagement.module.scss';
 const cx = classNames.bind(styles);
 
-function GroupRule() {
+function MenuManagement() {
     return (
         <div className={cx('menu-body')}>
             <Sidenav data={moduleUser} />
             <Content>
-                <HeaderContent title="Nhóm quyền">
-                    <Button>Add</Button>
-                </HeaderContent>
                 <Table />
-                <PaginationBot />
             </Content>
         </div>
     );
 }
 
-export default GroupRule;
+export default MenuManagement;

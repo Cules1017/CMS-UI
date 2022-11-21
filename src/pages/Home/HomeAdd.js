@@ -8,15 +8,15 @@ import PaginationBot from '~/component/Pagination/PaginationBot';
 import { moduleUser } from '~/routes';
 
 import classNames from 'classnames/bind';
-import styles from './GroupRule.module.scss';
+import styles from './home.module.scss';
 const cx = classNames.bind(styles);
 
-function GroupRule() {
+function HomeAdd() {
     return (
         <div className={cx('menu-body')}>
             <Sidenav data={moduleUser} />
             <Content>
-                <HeaderContent title="Nhóm quyền">
+                <HeaderContent title="User">
                     <Button>Add</Button>
                 </HeaderContent>
                 <Table />
@@ -26,4 +26,4 @@ function GroupRule() {
     );
 }
 
-export default GroupRule;
+export default HomeAdd;

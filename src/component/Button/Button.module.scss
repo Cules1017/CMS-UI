@@ -1,14 +1,18 @@
-.wapper {
-    cursor: pointer;
-    width: 80px;
+.wrapper {
+    min-width: 74px;
+    height: 30px;
     margin-left: 8px;
     font-weight: bold;
-    background-color: #1890ff;
     padding: 4px 24px;
+    background-color: #1890ff;
     color: white;
+    border-radius: 8px;
+    box-shadow: 0 20px 27px rgb(0 0 0 / 5%);
+    cursor: pointer;
     &:hover {
-        background-color: #0a4174;
+        background-color: #fff;
         color: #1890ff;
+        border: 1px solid #1890ff;
     }
     .success {
         background-color: #15bb2b;

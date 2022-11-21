@@ -2,16 +2,16 @@ import Sidenav from '~/component/Layout/Sidenav/Sidenav';
 import Content from '~/component/Layout/Content/Content';
 import Table from '~/component/Layout/UI/Table/Table';
 
-import { moduleServer } from '~/routes';
+import { moduleUserVNP } from '~/routes';
 
 import classNames from 'classnames/bind';
-import styles from './ServerManagement.module.scss';
+import styles from './UserVNPManagement.module.scss';
 const cx = classNames.bind(styles);
 
-function ServerManagement() {
+function UserVNPManagement() {
     return (
         <div className={cx('menu-body')}>
-            <Sidenav data={moduleServer} />
+            <Sidenav data={moduleUserVNP} />
             <Content>
                 <Table />
             </Content>
@@ -19,4 +19,4 @@ function ServerManagement() {
     );
 }
 
-export default ServerManagement;
+export default UserVNPManagement;

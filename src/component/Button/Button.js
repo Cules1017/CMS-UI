@@ -1,9 +1,9 @@
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
-import styles from './ButtonAdd.module.scss';
+import styles from './Button.module.scss';
 const cx = classNames.bind(styles);
 
-function ButtonAdd({
+function Button({
     to,
     href,
     primary = false,
@@ -28,7 +28,7 @@ function ButtonAdd({
         props.href = href;
         Comp = 'a';
     }
-    const classes = cx('wapper', { primary, outline, small, medium, large, success });
+    const classes = cx('wrapper', { primary, outline, small, medium, large, success });
     return (
         <Comp className={classes} {...props}>
             <span>{children}</span>
@@ -36,4 +36,4 @@ function ButtonAdd({
     );
 }
 
-export default ButtonAdd;
+export default Button;

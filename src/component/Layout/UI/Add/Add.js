@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import ButtonAdd from '~/component/ButtonAdd/ButtonAdd';
+import ButtonAdd from '~/component/Button/Button';
 import InputAdd from '~/component/InputAdd/InputAdd';
 import SelectAdd from '~/component/SelectAdd/SelectAdd';
 import styles from './Add.module.scss';
