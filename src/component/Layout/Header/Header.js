@@ -13,15 +13,18 @@ function Header() {
     // const handleOnclick = (num) => {
     //     setactive(num);
     // };
+
     var listbtn = [
         { content: 'Quản Lý User', path: '/usermanagement/user' },
         { content: 'Quản Lý Server', path: '/servermanagement/regionserver' },
         { content: 'Quản Lý User VNP', path: '/uservnpmanagement/user' },
-        { content: 'Quản Lý Source Code', path: '/sourcecodemanagement/module' },
+        { content: 'Quản Lý Source Code', path: '/uservnpmanagement/user' },
     ];
     const Comp = listbtn.map((x, index) => {
-        // console.log(location.pathname);
-        if (location.pathname === x.path)
+        var localpath = location.pathname.split('/')[1];
+
+        //console.log('local:', localpath, location.pathname.indexOf('/'), 'và', x.path, '=', x.path.includes(localpath));
+        if (x.path.includes(localpath))
             return (
                 <ButtonMenu to={x.path} key={index} active>
                     {x.content}

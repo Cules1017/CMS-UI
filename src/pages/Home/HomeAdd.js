@@ -9,6 +9,7 @@ import { moduleUser } from '~/routes';
 
 import classNames from 'classnames/bind';
 import styles from './home.module.scss';
+import Add from '~/component/Layout/UI/Add/Add';
 const cx = classNames.bind(styles);
 
 function HomeAdd() {
@@ -16,11 +17,8 @@ function HomeAdd() {
         <div className={cx('menu-body')}>
             <Sidenav data={moduleUser} />
             <Content>
-                <HeaderContent title="User">
-                    <Button>Add</Button>
-                </HeaderContent>
-                <Table />
-                <PaginationBot />
+                <HeaderContent title="Add User"></HeaderContent>
+                <Add />
             </Content>
         </div>
     );

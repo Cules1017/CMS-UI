@@ -9,6 +9,7 @@ import { moduleUser } from '~/routes';
 
 import classNames from 'classnames/bind';
 import styles from './home.module.scss';
+import TableDrag from '~/component/TableDrag/TableDrag';
 const cx = classNames.bind(styles);
 
 function Home() {
@@ -17,9 +18,10 @@ function Home() {
             <Sidenav data={moduleUser} />
             <Content>
                 <HeaderContent title="User">
-                    <Button>Add</Button>
+                    <Button to="/usermanagement/user/add">Add</Button>
                 </HeaderContent>
                 <Table />
+                <TableDrag></TableDrag>
                 <PaginationBot />
             </Content>
         </div>

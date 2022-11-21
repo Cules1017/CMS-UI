@@ -4,9 +4,11 @@ import ServerManagement from '~/pages/ServerManagement/ServerManagement';
 import SourceCodeManagement from '~/pages/SourceCodeManagement/SourceCodeManagement';
 import UserVNPManagement from '~/pages/UserVNPManagement/UserVNPManagement';
 import MenuManagement from '~/pages/MenuManagement/MenuManagement';
+import HomeAdd from '~/pages/Home/HomeAdd';
 
 const publicRoutes = [
     { path: '/usermanagement/user', component: Home },
+    { path: '/usermanagement/user/add', component: HomeAdd },
     { path: '/usermanagement/group', component: GroupRule },
     { path: '/usermanagement/menu', component: MenuManagement },
 
