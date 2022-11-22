@@ -1,6 +1,10 @@
 import classNames from 'classnames/bind';
 import SelectAction from '~/component/SelectAction/SelectAction';
 import styles from './Data.module.scss';
+
+import ButtonAdd from '~/component/Button/Button';
+import InputAdd from '~/component/InputAdd/InputAdd';
+import SelectAdd from '~/component/SelectAdd/SelectAdd';
 const cx = classNames.bind(styles);
 
 export const moduleUser = [
@@ -258,6 +262,8 @@ export const GroupRulecolumnDefs = [
         headerClass: cx('table__header'),
         cellClassRules: { table__body: 'value !== undefined' },
         rowDrag: true,
+        suppressColumnsToolPanel: true,
+        minWidth: 180,
     },
     {
         field: 'Operation',
@@ -280,6 +286,8 @@ export const UserInfocolumnDefs = [
         headerClass: cx('table__header'),
         cellClassRules: { table__body: 'value !== undefined' },
         rowDrag: true,
+        suppressColumnsToolPanel: true,
+        minWidth: 180,
     },
     {
         field: 'Name',
@@ -320,6 +328,8 @@ export const MenuManagementInfocolumnDefs = [
         headerClass: cx('table__header'),
         cellClassRules: { table__body: 'value !== undefined' },
         rowDrag: true,
+        suppressColumnsToolPanel: true,
+        minWidth: 180,
     },
     {
         field: 'MenuKey',
@@ -460,5 +470,40 @@ export const treeData = [
                 key: '0-3-2',
             },
         ],
+    },
+];
+export let datarulelist = GroupRuleList.map((i) => {
+    return i.GroupName;
+});
+export let DataAddUserForm = [
+    {
+        label: 'Fullname',
+        require: true,
+        tag: [<InputAdd long name="fullname" />],
+    },
+    {
+        label: 'Username',
+        require: true,
+        tag: [<InputAdd long name="username" />],
+    },
+    {
+        label: 'VASC Mail',
+        require: false,
+        tag: [<InputAdd long name="mail" />],
+    },
+    {
+        label: 'Password',
+        require: true,
+        tag: [<InputAdd long name="password" type="password" short />],
+    },
+    {
+        label: 'Group',
+        require: false,
+        tag: [<SelectAdd long data={datarulelist}></SelectAdd>],
+    },
+    {
+        label: '',
+        require: false,
+        tag: [<ButtonAdd>Save</ButtonAdd>, <ButtonAdd>Reset</ButtonAdd>],
     },
 ];
