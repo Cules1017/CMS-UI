@@ -5,7 +5,7 @@ import HeaderContent from '~/component/HeaderContent/HeaderContent';
 import TableDrag from '~/component/TableDrag/TableDrag';
 import classNames from 'classnames/bind';
 import styles from './MenuManagement.module.scss';
-import { moduleUser, userInFo, UserInfocolumnDefs } from '~/Data/Data';
+import { moduleUser, MenuManagementList, MenuManagementInfocolumnDefs, treeData } from '~/Data/Data';
 const cx = classNames.bind(styles);
 function MenuManagement() {
     return (
@@ -14,8 +14,8 @@ function MenuManagement() {
             <Content>
                 <HeaderContent title="Quản Lý Menu"></HeaderContent>
                 <div className={cx('wrapper_menu')}>
-                    <TreeView />
-                    <TableDrag columnheader={UserInfocolumnDefs} rowData={userInFo} />
+                    <TreeView dataTree={treeData} />
+                    <TableDrag columnheader={MenuManagementInfocolumnDefs} rowData={MenuManagementList} />
                 </div>
             </Content>
         </div>

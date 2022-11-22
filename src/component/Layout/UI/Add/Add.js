@@ -2,6 +2,7 @@ import classNames from 'classnames/bind';
 import ButtonAdd from '~/component/Button/Button';
 import InputAdd from '~/component/InputAdd/InputAdd';
 import SelectAdd from '~/component/SelectAdd/SelectAdd';
+import { GroupRuleList } from '~/Data/Data';
 import styles from './Add.module.scss';
 const cx = classNames.bind(styles);
 
@@ -15,6 +16,9 @@ function Add() {
         'Agency_view',
         'Ban Giám đốc-MyTV',
     ];
+    let datarulelist = GroupRuleList.map((i) => {
+        return i.GroupName;
+    });
     return (
         <div className={cx('wappwer')}>
             <table className={cx('tablefit')}>
@@ -72,7 +76,7 @@ function Add() {
                         Group
                     </td>
                     <td>
-                        <SelectAdd long data={dataselect}></SelectAdd>
+                        <SelectAdd long data={datarulelist}></SelectAdd>
                     </td>
                 </tr>
                 <tr>
