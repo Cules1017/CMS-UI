@@ -196,13 +196,13 @@ export const GroupRuleList = [
         Operation: '',
     },
     {
-        ID: 1,
-        GroupName: 'administration',
+        ID: 12,
+        GroupName: 'administration1',
         Operation: '',
     },
     {
-        ID: 1,
-        GroupName: 'administration',
+        ID: 13,
+        GroupName: 'administration2',
         Operation: '',
     },
 ];
