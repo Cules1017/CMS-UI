@@ -1,9 +1,11 @@
-import classNames from 'classnames/bind';
 import ButtonAdd from '~/component/Button/Button';
 import InputAdd from '~/component/InputAdd/InputAdd';
 import SelectAdd from '~/component/SelectAdd/SelectAdd';
+
 import { GroupRuleList } from '~/Data/Data';
+
 import styles from './Add.module.scss';
+import classNames from 'classnames/bind';
 const cx = classNames.bind(styles);
 
 function Add() {
