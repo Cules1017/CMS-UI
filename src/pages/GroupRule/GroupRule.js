@@ -17,7 +17,7 @@ function GroupRule() {
             <Sidenav data={moduleUser} />
             <Content>
                 <HeaderContent title="Nhóm quyền">
-                    <Button>Add</Button>
+                    <Button to="/usermanagement/user/add">Add</Button>
                 </HeaderContent>
                 <Table />
                 <PaginationBot />

@@ -77,25 +77,10 @@ export const moduleServer = [
     },
 ];
 
-export const moduleSourceCode = [
-    {
-        name: 'Module',
-        path: 'sourcecodemanagement/module',
-    },
-    {
-        name: 'File',
-        path: '/sourcecodemanagement/file',
-    },
-    {
-        name: 'Controller',
-        path: '/sourcecodemanagement/controller',
-    },
-];
-
 export const moduleUserVNP = [
     {
         name: 'User',
-        path: 'uservnpmanagement/user',
+        path: '/uservnpmanagement/user',
     },
     {
         name: 'Nhóm quyền',
@@ -107,46 +92,66 @@ export const moduleUserVNP = [
     },
 ];
 
+export const moduleSourceCode = [
+    {
+        name: 'Module',
+        path: '/sourcecodemanagement/module',
+    },
+    {
+        name: 'File',
+        path: '/sourcecodemanagement/file',
+    },
+    {
+        name: 'Controller',
+        path: '/sourcecodemanagement/controller',
+    },
+];
+
 export const userInFo = [
     {
-        id: 1,
-        fullname: 'Nguyen Van A',
-        name: 'NVA',
-        group: 'Admin',
-        createDate: '18/10/2022',
-        status: 'Hoạt động',
+        ID: 1,
+        Fullname: 'Nguyen Van A',
+        Name: 'NVA',
+        Group: 'Admin',
+        CreateDate: '18/10/2022',
+        Status: 'Hoạt động',
+        Operation: '',
     },
     {
-        id: 2,
-        fullname: 'Nguyen Van B',
-        name: 'NVA',
-        group: 'Admin',
-        createDate: '1/9/2022',
-        status: 'Hoạt động',
+        ID: 2,
+        Fullname: 'Nguyen Van B',
+        Name: 'NVA',
+        Group: 'Admin',
+        CreateDate: '1/9/2022',
+        Status: 'Hoạt động',
+        Operation: '',
     },
     {
-        id: 3,
-        fullname: 'Nguyen Van C',
-        name: 'NVA',
-        group: 'Admin',
-        createDate: '18/10/2022',
-        status: 'Ẩn',
+        ID: 3,
+        Fullname: 'Nguyen Van C',
+        Name: 'NVA',
+        Group: 'Admin',
+        CreateDate: '18/10/2022',
+        Status: 'Ẩn',
+        Operation: '',
     },
     {
-        id: 4,
-        fullname: 'Nguyen Van D',
-        name: 'NVA',
-        group: 'Admin',
-        createDate: '20/10/2022',
-        status: 'Ẩn',
+        ID: 4,
+        Fullname: 'Nguyen Van D',
+        Name: 'NVA',
+        Group: 'Admin',
+        CreateDate: '20/10/2022',
+        Status: 'Ẩn',
+        Operation: '',
     },
     {
-        id: 5,
-        fullname: 'Nguyen Van E',
-        name: 'NVA',
-        group: 'Admin',
-        createDate: '18/10/2022',
-        status: 'Hoạt động',
+        ID: 5,
+        Fullname: 'Nguyen Van E',
+        Name: 'NVA',
+        Group: 'Admin',
+        CreateDate: '18/10/2022',
+        Status: 'Hoạt động',
+        Operation: '',
     },
 ];
 

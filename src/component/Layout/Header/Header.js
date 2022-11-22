@@ -18,7 +18,7 @@ function Header() {
         { content: 'Quản Lý User', path: '/usermanagement/user' },
         { content: 'Quản Lý Server', path: '/servermanagement/regionserver' },
         { content: 'Quản Lý User VNP', path: '/uservnpmanagement/user' },
-        { content: 'Quản Lý Source Code', path: '/uservnpmanagement/user' },
+        { content: 'Quản Lý Source Code', path: '/sourcecodemanagement/module' },
     ];
     const Comp = listbtn.map((x, index) => {
         var localpath = location.pathname.split('/')[1];

@@ -28,7 +28,7 @@ body {
     text-rendering: optimizespeed;
     color: var(--text-color);
     overflow-y: overlay;
-    background-color: #fafafa;
+    background-color: #f0f0f0;
 }
 
 // Scrollbar CSS
@@ -89,4 +89,14 @@ th {
 th,
 td {
     padding: 3px;
+}
+
+.table__header {
+    background-color: #1890ff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    &:hover {
+        color: #1890ff;
+    }
 }
