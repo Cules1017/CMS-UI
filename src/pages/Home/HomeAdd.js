@@ -4,7 +4,7 @@ import HeaderContent from '~/component/HeaderContent/HeaderContent';
 import classNames from 'classnames/bind';
 import styles from './home.module.scss';
 import Add from '~/component/Layout/UI/Add/Add';
-import { moduleUser } from '~/Data/Data';
+import { moduleUser, DataAddUserForm } from '~/Data/Data';
 const cx = classNames.bind(styles);
 
 function HomeAdd() {
@@ -13,7 +13,7 @@ function HomeAdd() {
             <Sidenav data={moduleUser} />
             <Content>
                 <HeaderContent title="Add User"></HeaderContent>
-                <Add />
+                <Add data={DataAddUserForm} />
             </Content>
         </div>
     );
