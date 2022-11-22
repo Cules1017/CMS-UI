@@ -2,8 +2,6 @@ import Sidenav from '~/component/Layout/Sidenav/Sidenav';
 import Content from '~/component/Layout/Content/Content';
 import HeaderContent from '~/component/HeaderContent/HeaderContent';
 import Button from '~/component/Button/Button';
-import Table from '~/component/Layout/UI/Table/Table';
-import PaginationBot from '~/component/Pagination/PaginationBot';
 
 import { moduleUser } from '~/routes';
 
@@ -19,8 +17,6 @@ function GroupRule() {
                 <HeaderContent title="Nhóm quyền">
                     <Button to="/usermanagement/user/add">Add</Button>
                 </HeaderContent>
-                <Table />
-                <PaginationBot />
             </Content>
         </div>
     );

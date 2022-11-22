@@ -96,7 +96,12 @@ td {
     color: #fff;
     font-size: 14px;
     font-weight: 500;
+    border: 1px solid #f0f0f0;
     &:hover {
         color: #1890ff;
     }
+}
+
+.table__body {
+    border: 1px solid #f0f0f0 !important;
 }

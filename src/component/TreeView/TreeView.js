@@ -7,60 +7,38 @@ const cx = classNames.bind(styles);
 function TreeView() {
     const treeData = [
         {
-            title: 'administration',
+            title: 'Quản lý User',
             key: '0-0',
             children: [
                 {
-                    title: 'Quản lý User',
+                    title: 'User',
                     key: '0-0-0',
-                    children: [
-                        {
-                            title: 'User',
-                            key: '0-0-0-0',
-                        },
-                        {
-                            title: 'Nhóm quyền',
-                            key: '0-0-0-1',
-                        },
-                        {
-                            title: 'Quản lý menu',
-                            key: '0-0-0-2',
-                            children: [
-                                {
-                                    title: 'leaf',
-                                    key: '0-0-0-2-0',
-                                },
-                                {
-                                    title: 'leaf',
-                                    key: '0-0-0-2-1',
-                                },
-                            ],
-                        },
-                    ],
                 },
                 {
-                    title: 'Quản Lý Server',
+                    title: 'Nhóm quyền',
                     key: '0-0-1',
-                    children: [
-                        {
-                            title: 'leaf',
-                            key: '0-0-1-0',
-                        },
-                    ],
                 },
                 {
-                    title: 'parent 1-2',
+                    title: 'Quản lý menu',
                     key: '0-0-2',
-                    children: [
-                        {
-                            title: 'leaf',
-                            key: '0-0-2-0',
-                        },
-                        {
-                            title: 'leaf',
-                            key: '0-0-2-1',
-                        },
-                    ],
+                },
+            ],
+        },
+        {
+            title: 'Quản lý Server',
+            key: '0-0',
+            children: [
+                {
+                    title: 'User',
+                    key: '0-0-0',
+                },
+                {
+                    title: 'Nhóm quyền',
+                    key: '0-0-1',
+                },
+                {
+                    title: 'Quản lý menu',
+                    key: '0-0-2',
                 },
             ],
         },
@@ -70,7 +48,7 @@ function TreeView() {
     };
 
     return (
-        <div className={cx('wapper')}>
+        <div className={cx('wrapper')}>
             <Tree
                 showLine
                 switcherIcon={<LeftSquareOutlined />}

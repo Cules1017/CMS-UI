@@ -13,13 +13,49 @@ const cx = classNames.bind(styles);
 
 function Home() {
     const columnDefs = [
-        { field: 'ID', headerClass: cx('table__header'), rowDrag: true },
-        { field: 'Fullname', headerClass: cx('table__header'), rowDrag: true },
-        { field: 'Name', headerClass: cx('table__header'), rowDrag: true },
-        { field: 'Group', headerClass: cx('table__header'), rowDrag: true },
-        { field: 'CreateDate', headerClass: cx('table__header'), rowDrag: true },
-        { field: 'Status', headerClass: cx('table__header'), rowDrag: true },
-        { field: 'Operation', headerClass: cx('table__header'), cellRenderer: SelectAction, rowDrag: true },
+        {
+            field: 'ID',
+            headerClass: cx('table__header'),
+            cellClassRules: { table__body: 'value !== undefined' },
+            rowDrag: true,
+        },
+        {
+            field: 'Fullname',
+            headerClass: cx('table__header'),
+            cellClassRules: { table__body: 'value !== undefined' },
+            rowDrag: true,
+        },
+        {
+            field: 'Name',
+            headerClass: cx('table__header'),
+            cellClassRules: { table__body: 'value !== undefined' },
+            rowDrag: true,
+        },
+        {
+            field: 'Group',
+            headerClass: cx('table__header'),
+            cellClassRules: { table__body: 'value !== undefined' },
+            rowDrag: true,
+        },
+        {
+            field: 'CreateDate',
+            headerClass: cx('table__header'),
+            cellClassRules: { table__body: 'value !== undefined' },
+            rowDrag: true,
+        },
+        {
+            field: 'Status',
+            headerClass: cx('table__header'),
+            cellClassRules: { table__body: 'value !== undefined' },
+            rowDrag: true,
+        },
+        {
+            field: 'Operation',
+            headerClass: cx('table__header'),
+            cellClassRules: { table__body: 'value !== undefined' },
+            cellRenderer: SelectAction,
+            rowDrag: true,
+        },
     ];
     return (
         <div className={cx('menu-body')}>
