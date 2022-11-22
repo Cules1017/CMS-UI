@@ -8,7 +8,7 @@ function ButtonMenu({ to = '', active = false, children }) {
         to,
     };
     return (
-        <Link className={cx('wapper', { active: active })} {...props}>
+        <Link className={cx('wrapper', { active: active })} {...props}>
             <span>{children}</span>
         </Link>
     );
