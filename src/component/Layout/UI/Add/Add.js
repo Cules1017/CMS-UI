@@ -7,15 +7,6 @@ import styles from './Add.module.scss';
 const cx = classNames.bind(styles);
 
 function Add() {
-    var dataselect = [
-        'Administration',
-        'Agency Sales',
-        'agency_b2c',
-        'Agency_MyTV',
-        'agency_trainning',
-        'Agency_view',
-        'Ban Giám đốc-MyTV',
-    ];
     let datarulelist = GroupRuleList.map((i) => {
         return i.GroupName;
     });
