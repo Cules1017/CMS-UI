@@ -9,7 +9,7 @@ import styles from './TableDrag.module.scss';
 import { userInFo } from '~/routes';
 const cx = classNames.bind(styles);
 
-function TableDrag({ columnheader = [] }) {
+function TableDrag({ columnheader = [], small = false }) {
     // const columnDefs = [
     //     { field: 'ID', headerClass: cx('table__header'), rowDrag: true },
     //     { field: 'Fullname', headerClass: cx('table__header'), rowDrag: true },
@@ -30,7 +30,7 @@ function TableDrag({ columnheader = [] }) {
     }, []);
 
     return (
-        <div className={cx('wrapper', 'ag-theme-alpine')}>
+        <div className={cx('wrapper', 'ag-theme-alpine', { small })}>
             <AgGridReact
                 rowData={userInFo}
                 columnDefs={columnDefs}

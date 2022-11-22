@@ -17,8 +17,10 @@ function MenuManagement() {
             <Sidenav data={moduleUser} />
             <Content>
                 <HeaderContent title="Quản Lý Menu"></HeaderContent>
-                <TreeView />
-                <TableDrag />
+                <div className={cx('wrapper_menu')}>
+                    <TreeView />
+                    <TableDrag small />
+                </div>
             </Content>
         </div>
     );
