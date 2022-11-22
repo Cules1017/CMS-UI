@@ -207,6 +207,45 @@ export const GroupRuleList = [
     },
 ];
 
+export const MenuManagementList = [
+    {
+        MenuName: 'Quản lý User',
+        MenuKey: 'ql-user',
+        MenuLink: '/usermanagement/user',
+        MenuParent: '5',
+        Order: '1',
+        Status: 'Hoạt động',
+        Operation: '',
+    },
+    {
+        MenuName: 'Quản lý Server',
+        MenuKey: 'ql-server',
+        MenuLink: '/servermanagement/regionserver',
+        MenuParent: '5',
+        Order: '2',
+        Status: 'Hoạt động',
+        Operation: '',
+    },
+    {
+        MenuName: 'Quản lý User VNP',
+        MenuKey: 'ql-user-vnp',
+        MenuLink: '/uservnpmanagement/user',
+        MenuParent: '5',
+        Order: '3',
+        Status: 'Hoạt động',
+        Operation: '',
+    },
+    {
+        MenuName: 'Quản lý source code',
+        MenuKey: 'ql-source-code',
+        MenuLink: '/sourcecodemanagement/module',
+        MenuParent: '5',
+        Order: '4',
+        Status: 'Hoạt động',
+        Operation: '',
+    },
+];
+
 export const GroupRulecolumnDefs = [
     {
         field: 'ID',
@@ -272,5 +311,154 @@ export const UserInfocolumnDefs = [
         cellClassRules: { table__body: 'value !== undefined' },
         cellRenderer: SelectAction,
         rowDrag: true,
+    },
+];
+
+export const MenuManagementInfocolumnDefs = [
+    {
+        field: 'MenuName',
+        headerClass: cx('table__header'),
+        cellClassRules: { table__body: 'value !== undefined' },
+        rowDrag: true,
+    },
+    {
+        field: 'MenuKey',
+        headerClass: cx('table__header'),
+        cellClassRules: { table__body: 'value !== undefined' },
+        rowDrag: true,
+    },
+    {
+        field: 'MenuLink',
+        headerClass: cx('table__header'),
+        cellClassRules: { table__body: 'value !== undefined' },
+        rowDrag: true,
+    },
+    {
+        field: 'MenuParent',
+        headerClass: cx('table__header'),
+        cellClassRules: { table__body: 'value !== undefined' },
+        rowDrag: true,
+    },
+    {
+        field: 'Order',
+        headerClass: cx('table__header'),
+        cellClassRules: { table__body: 'value !== undefined' },
+        rowDrag: true,
+    },
+    {
+        field: 'Status',
+        headerClass: cx('table__header'),
+        cellClassRules: { table__body: 'value !== undefined' },
+        rowDrag: true,
+    },
+    {
+        field: 'Operation',
+        headerClass: cx('table__header'),
+        cellClassRules: { table__body: 'value !== undefined' },
+        cellRenderer: SelectAction,
+        rowDrag: true,
+    },
+];
+
+export const treeData = [
+    {
+        title: 'Quản lý User',
+        key: '0-0',
+        children: [
+            {
+                title: 'User',
+                key: '0-0-0',
+            },
+            {
+                title: 'Nhóm quyền',
+                key: '0-0-1',
+            },
+            {
+                title: 'Quản lý menu',
+                key: '0-0-2',
+            },
+        ],
+    },
+    {
+        title: 'Quản lý Server',
+        key: '0-1',
+        children: [
+            {
+                title: 'Region Server',
+                key: '0-1-0',
+            },
+            {
+                title: 'EPG Server',
+                key: '0-1-1',
+            },
+            {
+                title: 'Core Server',
+                key: '0-1-2',
+            },
+            {
+                title: 'Cấu hình Auhen URL',
+                key: '0-1-3',
+            },
+            {
+                title: 'Redis Server',
+                key: '0-1-4',
+            },
+            {
+                title: 'Quản lý Server group',
+                key: '0-1-5',
+            },
+            {
+                title: 'Plugin server type',
+                key: '0-1-6',
+            },
+            {
+                title: 'Plugin server',
+                key: '0-1-7',
+            },
+            {
+                title: 'Device by passr',
+                key: '0-1-8',
+            },
+            {
+                title: 'Quản lý Services',
+                key: '0-1-9',
+            },
+        ],
+    },
+    {
+        title: 'Quản lý User VNP',
+        key: '0-2',
+        children: [
+            {
+                title: 'User',
+                key: '0-2-0',
+            },
+            {
+                title: 'Nhóm quyền',
+                key: '0-2-1',
+            },
+            {
+                title: 'Quản lý menu',
+                key: '0-2-2',
+            },
+        ],
+    },
+    {
+        title: 'Quản lý source code',
+        key: '0-3',
+        children: [
+            {
+                title: 'Module',
+                key: '0-3-0',
+            },
+            {
+                title: 'File',
+                key: '0-3-1',
+            },
+            {
+                title: 'Controller',
+                key: '0-3-2',
+            },
+        ],
     },
 ];
