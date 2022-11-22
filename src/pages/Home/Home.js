@@ -8,6 +8,7 @@ import { moduleUser } from '~/routes';
 import classNames from 'classnames/bind';
 import styles from './home.module.scss';
 import TableDrag from '~/component/TableDrag/TableDrag';
+import SelectAction from '~/component/SelectAction/SelectAction';
 const cx = classNames.bind(styles);
 
 function Home() {
@@ -18,7 +19,7 @@ function Home() {
         { field: 'Group', headerClass: cx('table__header'), rowDrag: true },
         { field: 'CreateDate', headerClass: cx('table__header'), rowDrag: true },
         { field: 'Status', headerClass: cx('table__header'), rowDrag: true },
-        { field: 'Operation', headerClass: cx('table__header'), rowDrag: true },
+        { field: 'Operation', headerClass: cx('table__header'), cellRenderer: SelectAction, rowDrag: true },
     ];
     return (
         <div className={cx('menu-body')}>

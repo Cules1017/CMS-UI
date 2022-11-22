@@ -5,6 +5,7 @@ import SourceCodeManagement from '~/pages/SourceCodeManagement/SourceCodeManagem
 import UserVNPManagement from '~/pages/UserVNPManagement/UserVNPManagement';
 import MenuManagement from '~/pages/MenuManagement/MenuManagement';
 import HomeAdd from '~/pages/Home/HomeAdd';
+import SelectAction from '~/component/SelectAction/SelectAction';
 
 const publicRoutes = [
     { path: '/usermanagement/user', component: Home },
