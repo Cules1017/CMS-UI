@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
 
 import { AgGridReact } from 'ag-grid-react';
+import 'ag-grid-enterprise';
 import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-alpine.css';
 
@@ -19,6 +20,29 @@ function TableDrag({ columnheader = [], rowData = [] }) {
         };
     }, []);
 
+    const sideBar = useMemo(() => {
+        return {
+            toolPanels: [
+                {
+                    id: 'columns',
+                    labelDefault: 'Columns',
+                    labelKey: 'columns',
+                    iconKey: 'columns',
+                    toolPanel: 'agColumnsToolPanel',
+                    toolPanelParams: {
+                        suppressRowGroups: true,
+                        suppressValues: true,
+                        suppressPivots: true,
+                        suppressPivotMode: true,
+                        suppressColumnFilter: true,
+                        suppressColumnSelectAll: true,
+                        suppressColumnExpandAll: true,
+                    },
+                },
+            ],
+            defaultToolPanel: false,
+        };
+    }, []);
     return (
         <div className={cx('wrapper', 'ag-theme-alpine')}>
             <AgGridReact
@@ -27,6 +51,7 @@ function TableDrag({ columnheader = [], rowData = [] }) {
                 defaultColDef={defaultColDef}
                 rowDragManaged={true}
                 animateRows={true}
+                sideBar={sideBar}
             ></AgGridReact>
         </div>
     );

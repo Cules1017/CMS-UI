@@ -1,4 +1,4 @@
-.wapper {
+.wrapper {
     padding: auto;
     color: black;
     padding-left: 10px;
@@ -9,7 +9,8 @@
     height: 32px;
     border-right: dotted 1px rgb(170, 168, 168);
     background: rgb(6, 6, 251);
-    background: white; //linear-gradient(180deg, rgb(196, 196, 215) 36%, rgba(0, 212, 255, 1) 100%);
+    background: white;
+    transition: 0.3s;
     &:hover,
     &:focus {
         cursor: pointer;

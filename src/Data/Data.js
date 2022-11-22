@@ -258,6 +258,8 @@ export const GroupRulecolumnDefs = [
         headerClass: cx('table__header'),
         cellClassRules: { table__body: 'value !== undefined' },
         rowDrag: true,
+        suppressColumnsToolPanel: true,
+        minWidth: 180,
     },
     {
         field: 'Operation',
@@ -280,6 +282,8 @@ export const UserInfocolumnDefs = [
         headerClass: cx('table__header'),
         cellClassRules: { table__body: 'value !== undefined' },
         rowDrag: true,
+        suppressColumnsToolPanel: true,
+        minWidth: 180,
     },
     {
         field: 'Name',
@@ -320,6 +324,8 @@ export const MenuManagementInfocolumnDefs = [
         headerClass: cx('table__header'),
         cellClassRules: { table__body: 'value !== undefined' },
         rowDrag: true,
+        suppressColumnsToolPanel: true,
+        minWidth: 180,
     },
     {
         field: 'MenuKey',
