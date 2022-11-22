@@ -6,10 +6,9 @@ import 'ag-grid-community/styles/ag-theme-alpine.css';
 
 import classNames from 'classnames/bind';
 import styles from './TableDrag.module.scss';
-import { userInFo } from '~/routes';
 const cx = classNames.bind(styles);
 
-function TableDrag({ columnheader = [] }) {
+function TableDrag({ columnheader = [], rowData = [] }) {
     const [columnDefs, setColumnDefs] = useState(columnheader);
     const defaultColDef = useMemo(() => {
         return {
@@ -23,7 +22,7 @@ function TableDrag({ columnheader = [] }) {
     return (
         <div className={cx('wrapper', 'ag-theme-alpine')}>
             <AgGridReact
-                rowData={userInFo}
+                rowData={rowData}
                 columnDefs={columnDefs}
                 defaultColDef={defaultColDef}
                 rowDragManaged={true}

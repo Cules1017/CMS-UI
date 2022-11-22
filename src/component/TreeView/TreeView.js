@@ -1,5 +1,4 @@
 import { LeftSquareOutlined } from '@ant-design/icons';
-import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind';
 import styles from './TreeView.module.scss';
 import { Tree } from 'antd';

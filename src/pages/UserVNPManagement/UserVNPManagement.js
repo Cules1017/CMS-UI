@@ -1,11 +1,9 @@
 import Sidenav from '~/component/Layout/Sidenav/Sidenav';
 import Content from '~/component/Layout/Content/Content';
-import Table from '~/component/Layout/UI/Table/Table';
-
-import { moduleUserVNP } from '~/routes';
-
 import classNames from 'classnames/bind';
 import styles from './UserVNPManagement.module.scss';
+import { moduleUserVNP } from '~/Data/Data';
+import TableDrag from '~/component/TableDrag/TableDrag';
 const cx = classNames.bind(styles);
 
 function UserVNPManagement() {
@@ -13,7 +11,7 @@ function UserVNPManagement() {
         <div className={cx('menu-body')}>
             <Sidenav data={moduleUserVNP} />
             <Content>
-                <Table />
+                <TableDrag />
             </Content>
         </div>
     );

@@ -1,6 +1,3 @@
-import Button from '../Button/Button';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDeleteLeft, faEdit } from '@fortawesome/free-solid-svg-icons';
 import React, { Component } from 'react';
 // function handlechange(data) {
 //     alert(`xóa id: ${data.id} Name: ${data.name} thành công`);
